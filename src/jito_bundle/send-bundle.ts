@@ -27,16 +27,3 @@ export async function bull_dozer(connection : Connection, lp_ix : any,swap_ix : 
   );
  const bundle_result = await onBundleResult(search)
 return bundle_result
-
-// search.onBundleResult(
-//   (bundle) => {
-//     console.log(`JITO bundle result: ${JSON.stringify(bundle)}`);
-//     return true;
-//   },
-//   (error) => {
-//     console.log(`JITO bundle error: ${error}`);
-//     return false;
-//   }
-// );
-}
-
